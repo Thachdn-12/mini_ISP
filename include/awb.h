@@ -3,6 +3,8 @@
 
 #include <stdint.h>
 
-void awb(uint8_t *rgb, int w, int h);
+void awb_stats(rgb, w, h, ctx);
+void awb_update(ctx);
+void awb_apply(rgb, w, h, ctx);
 
 #endif
